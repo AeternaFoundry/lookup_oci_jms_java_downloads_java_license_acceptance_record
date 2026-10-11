@@ -1,0 +1,6 @@
+data "oci_jms_java_downloads_java_license_acceptance_record" "jms_java_downloads_java_license_acceptance_record_lookup" {
+  for_each = var.jms_java_downloads_java_license_acceptance_record_lookup
+
+  java_license_acceptance_record_id = each.value.java_license_acceptance_record_id
+}
+
